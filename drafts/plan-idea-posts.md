@@ -153,4 +153,4 @@ Rules applied to all: first line is a complete claim, one idea per post, you-add
 - Cards 4 and 5 sit on the same angle, and cards 6 and 7 on the same angle. I gave each its own structure so they don't read as repeats.
 - Two Draft-column cards already have your own notes (the 20-minute timer and "forcing focus breaks focus"). I did not draft from them.
 - Card 3 lines 4 and 5 are inferred from your library, not stated word for word. Check they're true to you.
-- Draft 3 (X) and the structure notes come from one search page per topic. Not an exhaustive ranking.
+- The structures come from one search page per topic, not an exhaustive ranking.
