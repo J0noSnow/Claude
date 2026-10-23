@@ -12,10 +12,17 @@ Turns the user's own material into Substack Notes and X posts that borrow the st
 | Mode | Source of ideas | Research target |
 |---|---|---|
 | Ideas | Plan board "Idea" column (`eden_get_plan`, stage `idea`) or Strategy angles (`eden_get_strategy`). The Plan board is what "ideas" usually means. Strategy angles are the fallback. | Top posts on the idea's topic |
-| Essay promo | One essay the user names (`eden_search_workspace_items` then `eden_get_note_markdown`) | A named creator's promo notes |
+| Essay: mine | One essay the user names. Pull its core principles and stories and turn them into standalone notes and posts. | Top posts on the essay's topic |
+| Essay: promote | One essay the user names. Draft notes that send readers to it. | A creator's promo notes (the one the user names, otherwise the closest creator in their Strategy "shapedBy" list or niche) |
 | Topic | A topic the user types | Top posts on the topic |
 
+**When the user names an essay** ("use note-drafter on <essay>"), decide mine vs promote from their words: "promote", "announce", "send people to it" means promote. "from", "based on", "extract" means mine. If the words don't settle it, ask one short question: "Standalone notes drawn from it, or notes that promote it?" Don't guess.
+
+**Finding the essay:** search the library with two or three distinctive words from the name (`eden_search_workspace_items`, titles only, `type: markdown`). Titles may carry markdown asterisks and drafts may have several versions or outlines. If more than one plausible match comes back, list them with their dates and ask which one. Then read the whole essay (`eden_get_note_markdown`).
+
 If it's unclear whether "ideas" means the Plan cards or the Strategy angles, check the Plan board first and say which you used.
+
+**Defaults when the user doesn't say:** 5 drafts for an essay or topic, one per idea for Ideas mode. Each draft gets a Substack note and an X post.
 
 ## 2. Gather the user's material
 - Read every source idea or essay in full.
@@ -24,8 +31,8 @@ If it's unclear whether "ideas" means the Plan cards or the Strategy angles, che
 - Check the user's own top notes (`eden_search_social_content`, creator scope) so the drafts don't repeat what already performed.
 
 ## 3. Research the structures
-- **Ideas / Topic mode:** `eden_search_social_content`, scope `global`, `platforms: ["substack","twitter"]`, a query per topic, `minOutlierScore` 10 to 30, `orderBy: outlier`. Read the full body of the best ones with `eden_read_social_post` (set `attemptLiveFetch: false`).
-- **Essay promo mode:** `eden_resolve_creator`, then `eden_search_social_content` with scope `creator`, ordered by outlier and by recent. Read the promo notes in full, since previews cut off the restacked-essay line. Compare the same format across months.
+- **Ideas / Topic / Essay: mine modes:** `eden_search_social_content`, scope `global`, `platforms: ["substack","twitter"]`, a query per topic, `minOutlierScore` 10 to 30, `orderBy: outlier`. Read the full body of the best ones with `eden_read_social_post` (set `attemptLiveFetch: false`).
+- **Essay: promote mode:** `eden_resolve_creator`, then `eden_search_social_content` with scope `creator`, ordered by outlier and by recent. Read the promo notes in full, since previews cut off the restacked-essay line. Compare the same format across months.
 - Large results are saved to a file. Parse them with `python3 -I` and print only the fields you need (type, likes, outlier, URL, first 400 characters).
 - Name the structure of each top post: the hook, the line shape, the ending, and the length. Note its outlier score and likes.
 
@@ -40,7 +47,7 @@ Caveats to state in the output:
 - Substack: short (under about 70 words), first line a complete claim, one idea, no link or pitch unless it's a promo.
 - X: the sharpest single line, a reversal, or a named cost. Pure encouragement is saturated, so name the cost where honest.
 - Facts come from the library. If a line is inferred and not stated by the user, flag it in the notes. Never invent studies, numbers, or events.
-- For promo mode, keep the structure and change the words: a feeling-as-fact hook, a concrete number, a soft ask, reply bait, and the essay attached as a card. If the essay's title hides a phrase, keep it hidden in at least one post.
+- For promote mode, keep the structure and change the words: a feeling-as-fact hook, a concrete number, a soft ask, reply bait, and the essay attached as a card. If the essay's title hides a phrase, keep it hidden in at least one post.
 - Check time-sensitive wording against today's date (counts of days left, "this month").
 
 ## 5. Deliver
