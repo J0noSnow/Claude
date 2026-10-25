@@ -10,12 +10,16 @@ Pipeline: **journal → photo → Claude → Eden** (→ Substack later, with li
 ## 1. Order the pages
 
 - Sort photos by the printed page number, not by attachment order. Say so if the order differs.
+- If a page number is hidden or unreadable, work out the order from the content: sentences that continue across pages, the date line, and the mirror-image text showing through from the back of the page. Explain how you worked it out. If the order is still unclear, flag it and ask.
+- Photos may be rotated. Read them in the page's own orientation.
 - Group pages into entries. A new entry starts at a date line (e.g. "Wed 29th July") or a new heading.
 - Short notes that follow an entry without their own date (e.g. "Bones", "Obsessions") belong to the entry before them. Ask if unsure.
 
 ## 2. What to transcribe
 
 - Only text inside the page's own boundaries. Treat each page as a single page.
+- **Exception: drawn connectors.** If the user draws a line or arrow carrying one idea across the fold onto the facing page, follow it. Join the continued text to where the line starts, and say that you did.
+- Keep the user's own marks (arrows, symbols, `#1`) where they're written. Don't re-link or merge them into an interpretation without asking.
 - Start at the entry's date line. **Ignore anything above the date line** (the tail of the previous entry).
 - Ignore the facing page, text bleeding through from the other side, and anything outside the page edges.
 - If a sentence is cut off at the top or bottom of a photo, mark it `[cut off]` and ask for the neighbouring page.
