@@ -1,71 +1,72 @@
 ---
 name: note-drafter
-description: Use when the user wants Substack Notes and/or X posts drafted from their own material. That means ideas on the Eden Strategy or Plan board, an essay in the library, or a topic. Drafts are built on the structures of top-performing posts and filled with the user's real stories. Also use when the user wants posts that promote an essay, modeled on a named creator's promo notes.
+description: Use when the user wants Substack Notes and X posts drafted from the ideas in their Eden Strategy (pillar, topic and angle ideas) or Plan board cards. Each draft borrows the structure of a top-performing post and is filled with the user's own stories from the library. Not for promoting essays, newsletters or products.
 ---
 
 # Note drafter
 
-Turns the user's own material into Substack Notes and X posts that borrow the structure of posts that have already worked. The structure comes from research. The substance comes from the user's library, never from invention.
+Turns ideas from the user's Eden Strategy or Plan board into Substack Notes and X posts. The structure comes from posts that already worked. The substance comes from the user's library. Nothing is invented.
 
-## 1. Pick the mode
+## Scope
+Does: draft standalone Substack Notes and matching X posts for ideas the user already has.
+Does not: promote or announce an essay, newsletter, product or launch. Does not mine an essay for ideas. If the user asks for either, say this skill doesn't cover it and ask what they want.
 
-| Mode | Source of ideas | Research target |
-|---|---|---|
-| Ideas | Plan board "Idea" column (`eden_get_plan`, stage `idea`) or Strategy angles (`eden_get_strategy`). The Plan board is what "ideas" usually means. Strategy angles are the fallback. | Top posts on the idea's topic |
-| Essay: mine | One essay the user names. Pull its core principles and stories and turn them into standalone notes and posts. | Top posts on the essay's topic |
-| Essay: promote | One essay the user names. Draft notes that send readers to it. | A creator's promo notes (the one the user names, otherwise the closest creator in their Strategy "shapedBy" list or niche) |
-| Topic | A topic the user types | Top posts on the topic |
+Only the ideas in step 1 set the topics. Don't let recent essays, launches or earlier work in the conversation steer the drafts.
 
-**When the user names an essay** ("use note-drafter on <essay>"), decide mine vs promote from their words: "promote", "announce", "send people to it" means promote. "from", "based on", "extract" means mine. If the words don't settle it, ask one short question: "Standalone notes drawn from it, or notes that promote it?" Don't guess.
+## 1. Ask which idea source
+Always ask first, even if it seems obvious:
+- **Strategy pillar ideas:** `eden_get_strategy`, then `eden_get_strategy` with `pillar` for each pillar to get the ideas under every topic and angle.
+- **Plan board cards:** `eden_get_plan` (the Idea or Potential idea column).
 
-**Finding the essay:** search the library with two or three distinctive words from the name (`eden_search_workspace_items`, titles only, `type: markdown`). Titles may carry markdown asterisks and drafts may have several versions or outlines. If more than one plausible match comes back, list them with their dates and ask which one. Then read the whole essay (`eden_get_note_markdown`).
-
-If it's unclear whether "ideas" means the Plan cards or the Strategy angles, check the Plan board first and say which you used.
-
-**Defaults when the user doesn't say:** 5 drafts for an essay or topic, one per idea for Ideas mode. Each draft gets a Substack note and an X post.
+Then choose what to draft:
+- Skip ideas flagged `onPlanner`, cards in a done stage, and ideas already drafted in an earlier batch.
+- Strategy topics with no angles have no ideas. Skip them and say which.
+- Default: 2 ideas per topic that has angles, from different angles (one "What you stand for" if it fits). If the user names a topic, pillar or count, follow that.
+- Say which source and which ideas you used.
 
 ## 2. Gather the user's material
-- Read every source idea or essay in full.
-- Search the library for each theme (`eden_search_workspace_items`, substring on titles, so try several words). Read the journals, essays, and notes that match.
-- Read the voice profile note ("The Wandering Philosopher voice profile") and follow it. Key rules: you-address, concrete images, confession then reframe, dry humor, no em dashes, no guru framing, none of the AI-tell words it lists.
-- Check the user's own top notes (`eden_search_social_content`, creator scope) so the drafts don't repeat what already performed.
+- Read each chosen idea in full. Use the Strategy page's own words (`words`, `rules`, `beliefs`, `enemy`) where they fit.
+- Search the library for each idea's theme (`eden_search_workspace_items`, substring on titles, so try several words) and read the journals, essays and notes that match.
+- Read the voice profile note ("The Wandering Philosopher voice profile") and follow it: you-address, concrete images, dry humor, no em dashes, no guru framing, none of its listed AI-tell words.
+- Check the user's own recent notes (`eden_search_social_content`, creator scope, `orderBy: recent`) so drafts don't repeat what's been posted, and to see which of their formats are working.
 
 ## 3. Research the structures
-- **Ideas / Topic / Essay: mine modes:** `eden_search_social_content`, scope `global`, `platforms: ["substack","twitter"]`, a query per topic, `minOutlierScore` 10 to 30, `orderBy: outlier`. Read the full body of the best ones with `eden_read_social_post` (set `attemptLiveFetch: false`).
-- **Essay: promote mode:** `eden_resolve_creator`, then `eden_search_social_content` with scope `creator`, ordered by outlier and by recent. Read the promo notes in full, since previews cut off the restacked-essay line. Compare the same format across months.
-- Large results are saved to a file. Parse them with `python3 -I` and print only the fields you need (type, likes, outlier, URL, first 400 characters).
-- Name the structure of each top post: the hook, the line shape, the ending, and the length. Note its outlier score and likes.
+- `eden_search_social_content`, scope `global`, `platforms: ["substack","twitter"]`, one query per topic, `minOutlierScore` 15 to 30, `orderBy: outlier`. Read the full text of the best results with `eden_read_social_post` (`attemptLiveFetch: false`).
+- Large results are saved to a file. Parse them with `python3 -I` and print only type, likes, outlier, URL and the first 400 characters.
+- Name each top post's hook, line shape, ending and length. Record its likes and outlier score.
+- Queries that include a first name (for example "Jack") return people with that name. Use topic words.
 
-Caveats to state in the output:
+State in the output:
 - One search page is not a ranking.
-- Small accounts can have inflated outlier scores. Say so.
-- A format that repeats can decay. Check the trend before copying it.
+- Small accounts have inflated outlier scores. Say so.
+- A format can decay. Check the trend before copying it.
 
-## 4. Map and draft
-- One draft per idea unless the user asks for more. Give each draft a different structure so a batch doesn't read as repeats.
-- Each draft names its template (creator, outlier score), the Eden notes it draws on, a Substack version, and an X version (280 characters max).
-- Substack: short (under about 70 words), first line a complete claim, one idea, no link or pitch unless it's a promo.
-- X: the sharpest single line, a reversal, or a named cost. Pure encouragement is saturated, so name the cost where honest.
-- Facts come from the library. If a line is inferred and not stated by the user, flag it in the notes. Never invent studies, numbers, or events.
-- For promote mode, keep the structure and change the words: a feeling-as-fact hook, a concrete number, a soft ask, reply bait, and the essay attached as a card. If the essay's title hides a phrase, keep it hidden in at least one post.
-- Check time-sensitive wording against today's date (counts of days left, "this month").
+## 4. Draft
+- One draft per idea. Give each draft a different structure so a batch doesn't read as repeats.
+- Each draft shows: the idea, the Strategy card it came from, the template (creator, likes, outlier), the Eden notes it draws on, a Substack note and an X post (280 characters max, count them).
+- Substack: under about 70 words, first line a complete claim or a concrete scene, one idea, no link or pitch.
+- X: the sharpest single line, a reversal, or a named cost. Pure encouragement is saturated.
+- Facts come from the library. If a line is inferred rather than stated by the user, flag it. Never invent studies, numbers, quotes or events.
+- If a draft needs a real lesson or story the library doesn't hold, write a short teaser and ask the user for the real one.
+- Flag drafts built on private journal entries.
+- Check any time-sensitive wording against today's date.
 
 ## 5. Deliver
 - Write a markdown file under `drafts/` in the working directory.
-- The user cannot open files in the cloud container. Also publish a page with copy buttons (Artifact) and send the file (`SendUserFile`). Don't point at a path alone.
-- Lead the reply with the link, then a short summary: the structures used, the gaps, anything to check before posting.
-- End with 2 or 3 pointed questions that challenge the user's assumptions (which draft they'd actually post and why, whether a claim is true to them).
+- The user can't open files in the cloud container. Publish a page with copy buttons (Artifact) and send the file (`SendUserFile`).
+- Lead the reply with the link. Then give a short summary: the structures used, ideas skipped, anything to check before posting.
+- End with 2 or 3 pointed questions that challenge the user's assumptions.
 
 ## 6. Writing back to Eden
-Only on the user's ask:
-- `eden_update_plan` can append a note to a card, move its stage, and set its format. It never deletes and never edits existing notes, so finalize the text first.
-- Put the Substack text in the card notes with a heading line the user can delete. Keep each card's original text, pillar, topic, and angle.
-- If cards were deleted by hand, recreate them with their original text and metadata, and say which ones were recreated and which could not be.
+Only when the user asks:
+- `eden_update_plan` can append a note to a card, move its stage and set its format. It never deletes and never edits existing notes, so finalize the text first.
+- Put the Substack text in the card's notes under a heading line the user can delete. Keep the card's original text, pillar, topic and angle.
+- If the user deleted cards by hand, recreate them with their original text and metadata, and say which ones could not be restored.
 - Save notes to the library only when asked.
 
 ## Pitfalls seen
-- Reading "ideas" as Strategy angles when the user meant the Plan cards.
-- Previews hide the end of a promo note. Read the full body.
-- Re-using the user's already-posted notes as new ideas.
-- Promo notes about craft underperform promos about the reader's inner life.
+- Reading "ideas" as the wrong source. Ask.
+- Drifting into promoting a recent essay because it was in the conversation or at the top of the library.
+- Reusing lines from the user's existing top notes. Check their recent notes first.
+- Mirrored lists and promo-style notes underperformed for the user. Blunt, concrete or funny notes did better.
 - Leaving the drafts only in a container file the user can't open.
