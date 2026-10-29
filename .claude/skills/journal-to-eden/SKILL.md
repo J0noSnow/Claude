@@ -53,7 +53,7 @@ Paste each transcription into the chat, then list under it:
 ## 6. Upload to Eden
 
 - Tool: `eden_create_note` (load it with ToolSearch if needed), with `destination: {"kind": "library"}` and `presentation: "document"`.
-- **Title:** prefix with `Journal – `, followed by the entry's own title if it has one (e.g. `Journal – What is Wandering?`), otherwise the date (e.g. `Journal – Friday 23rd Oct 2026`). Use the user's title if they give one.
+- **Title:** always `Journal – <date> – <summarised title>`, e.g. `Journal – Thursday 29th Oct 2026 – Back to "You Are an Artist"`. Use the entry's own title as the summarised title if it has one, otherwise write a short summary of the entry. Use the user's title if they give one.
 - **Body:** `# <title>`, then the bold date line, then the entry. Put no blank lines between blocks (Eden adds the spacing), except inside code blocks.
 - Don't add the note to a board unless asked.
 - After uploading, say it's in **AI drafts** and that Eden archives untouched drafts after 30 days unless the user edits, keeps, or adds them to a board.
