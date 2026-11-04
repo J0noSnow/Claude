@@ -261,6 +261,7 @@ An essayist's comparative advantage is judgment and voice, which cannot be copie
 
 ### Do it
 Write a one-page avatar brief about yourself as reader:
+
 - Where I was three years ago (specific: what I read, what I did on a Tuesday evening).
 - The trigger that changed it.
 - Where I am now.
@@ -614,6 +615,7 @@ Jono, you write essays for a general readership and already have thousands of su
 **Why it works.** Strangers scrolling a feed are not searching for anything. A post has to give them a reason to stop that does not depend on already knowing you. Broad, pain-first openers do that. Keeping the detail for later also gives the newsletter a job that posts can't do.
 
 **Do it.**
+
 - Before posting, ask the three-question checklist above. If you can't answer "why would a stranger care", rewrite the first line.
 - For Jono's Journal: your essays are probably more reflective than pain-first. Don't change the essays. Change the Notes. Use the Note to name the problem the essay circles, and let the essay hold the nuance.
 - Keep a rough 80/20 split between your main themes and experiments, and review after a month.
@@ -665,6 +667,7 @@ A caution for essay writers: confident absolutes sit awkwardly with thoughtful, 
 **What Koe does.** In a paid post and several free ones, he describes one strong long piece feeding everything else, rather than separate content for each platform [DEMO]. He frames it as building a fictional universe: long form like the films, short posts like spin-offs, products like merchandise, with the goal of making a body of work someone can binge.
 
 **Level 1 (the base loop)** [DEMO]:
+
 1. An idea with potential becomes the weekly newsletter (public link, with a product link inside).
 2. The newsletter is broken into spin-off posts.
 3. One post per day links back to the newsletter.
@@ -673,6 +676,7 @@ A caution for essay writers: confident absolutes sit awkwardly with thoughtful, 
 One long-form home plus one writing-based short-form platform. That is all.
 
 **Level 2** (added only once level 1 runs smoothly) [DEMO]:
+
 - The newsletter doubles as a video script.
 - The video becomes a podcast.
 - The video is embedded in the public newsletter page.
@@ -729,6 +733,7 @@ His non-needy networking process, in seven steps [DEMO, he says he used it early
 ## Lesson 8: Remix, curation and crediting
 
 **What Koe does.** He lists several ways to borrow reach without begging [OPINION, with some DEMO]:
+
 - Write about someone's idea, tag them, and send it to them. He describes curating a newsletter section as "the best idea I saw this week", crediting people, then telling them.
 - Build threads that compile top posts from several people and tag them.
 - Interview creators, which he did first via a podcast to get guests [DEMO].
@@ -763,6 +768,7 @@ His non-needy networking process, in seven steps [DEMO, he says he used it early
 ## Lesson 11: Paid growth, platform risk and ethics (honest and caveated)
 
 **What Koe does.** Koe is open that he uses paid growth, but with narrow, specific rules [OPINION, with DEMO of the general practice]:
+
 - Pay mid-sized accounts to repost or reply to content that is genuinely good, not to run follower ads. He cited budgets of roughly $250-2,000 for around 30 reposts from accounts with 20,000-80,000 followers, and says a lead magnet should sit underneath [OPINION, figures from one paid post].
 - Avoid shout-outs for follower growth and avoid ads that buy followers.
 - Content quality retains the new followers; paid reach cannot rescue weak writing.
@@ -770,6 +776,7 @@ His non-needy networking process, in seven steps [DEMO, he says he used it early
 - He also lists "paying people who sell growth help" as a catalyst for tiny accounts [OPINION].
 
 **Why this is risky.** I am separating Koe's view from the risks he does not dwell on. These are my cautions, not his:
+
 1. **Disclosure.** Paid promotion that looks like an organic recommendation can breach advertising rules in many places (for example, the US FTC expects clear disclosure of paid endorsements). Check the rules where you and the promoter live.
 2. **Platform terms.** Many platforms forbid purchased engagement or manipulation. Rules differ by platform and change. Read the current terms; I have not verified Substack's.
 3. **Audience fit.** A reader gained through a repost that sold them a "hot take" may not want a considered essay. Expect a lower open rate and more unsubscribes.
@@ -814,6 +821,7 @@ Rules: each post must make sense without the essay; rewrite, do not paste excerp
 **Exercise 3.6: Schedule trial (one week).** Run the 2-hour budget, adapted: 60 / 30 / 30 minutes. Note how much slipped and why. *Deliverable:* a schedule you will actually keep.
 
 **Checklist for each weekly cycle:**
+
 - [ ] One essay outlined by midweek
 - [ ] Seven standalone Notes drafted
 - [ ] One link-bearing Note per day, not more
@@ -983,6 +991,7 @@ He also reports that he walks the reader up an awareness ladder: state the probl
 ## Lesson 7: P.S. and mid-letter promos, done honestly
 
 **What Koe does.** His promo placement, observed across letters:
+
 - A short note near the top for a time-bound launch (cohort, challenge, workshop), sometimes labelled openly as self-promotion and skippable [DEMO].
 - A mid-letter reminder box, often at a natural break [DEMO].
 - A P.S. at the end that repeats the offer, often with a deadline or a reader-only price [DEMO].
@@ -1013,6 +1022,7 @@ He states plainly when promo is done ("sales promo done"), and says his free let
 ## Lesson 9: Welcome email and lead magnet
 
 **What Koe does.** He recommends a welcome email that says what you cover, your vision and what to expect, then two or three story or problem emails, then, only later, a sales sequence [OPINION, from an older letter]. His lead-magnet advice [DEMO/OPINION]:
+
 - Make it beginner-level and action-oriented.
 - A swipe file, template, checklist, short ebook, or a repurposed best newsletter works.
 - A free product has three jobs: it creates customers, it centralises your authority (so plug it often), and it sells the next product (pitch at the end while leads are warm).
@@ -1047,6 +1057,7 @@ He states plainly when promo is done ("sales promo done"), and says his free let
 ## Lesson 11: Edit with AI critique, do not draft with AI
 
 **What Koe does.** His position, repeated in several places: AI is for thinking and critique, not for writing the final text [DEMO/OPINION].
+
 - All his letters are hand-written; AI helps with research and idea prompts [DEMO].
 - He tried prompts "the size of a mini course" and found only about one output in a hundred usable [DEMO, 2025].
 - A "thought partner" method: before writing, tell the AI the topic, and have it interview you one question at a time, pushing past generic answers until you produce several breakthroughs and a named concept for each. The result becomes an outline [DEMO, as he describes it]. Rules he builds in: no compliments, one question at a time, challenge vague claims, give unnamed ideas a name.
@@ -1058,6 +1069,7 @@ He states plainly when promo is done ("sales promo done"), and says his free let
 **Why it works.** A critic that asks questions finds gaps you are too close to see, while the voice, which is what readers come for, stays yours.
 
 **Do it.** After the first full draft, run three critique passes in separate chats, and make the edits yourself:
+
 1. *Hook:* "Where would a reader stop? What is unclear in the first 300 words?"
 2. *Structure:* "Summarise each section in one line. Where does the argument wobble?"
 3. *Density:* "Which paragraphs repeat a point or lack a concrete example?"
@@ -1083,6 +1095,7 @@ Never paste the AI's rewrite. Ask for questions and observations, then write you
 **Exercise 4.7: AI critique pass (45 minutes).** Run a recent draft through the three critique prompts above (write your own). Make edits by hand. *Deliverable:* a before/after of the first 300 words and a list of what the AI caught.
 
 **Checklist before publishing:**
+
 - [ ] Topic scored and chosen
 - [ ] Title is a claim or promise
 - [ ] Hook shows what most people get wrong (or equivalent)
@@ -1147,6 +1160,7 @@ His own history roughly matches: freelance web design, a few cheap information p
 One caution. In one letter he says he used to recommend service-first, but now tells people without real skills to improve themselves, document it, and productize [DEMO of a changed view]. He holds two versions of the ladder, and you can pick the one that fits your situation.
 
 **Why it works.**
+
 - Each rung teaches you something the next rung needs. One-to-one calls teach you what people actually struggle with. A cohort teaches you the order of the curriculum. A course is that curriculum frozen.
 - Higher prices need fewer customers, so you can start with a small audience.
 - Scarcity (a start date, a cohort size) is natural in a cohort and artificial in an evergreen course.
@@ -1165,6 +1179,7 @@ He also sketches a sample price ladder, roughly an ebook in the high twenties, a
 A second reading of the same evidence: much of it is the experience of a seller with an audience in the hundreds of thousands. A writer with thousands of subscribers should expect each step to bring in smaller numbers, and should judge a rung by what it teaches before judging it by what it earns.
 
 **Do it.**
+
 - Draw your ladder on one page with four boxes: free, micro (under $25), core (about $100 to $400), premium (over $500 or recurring).
 - Mark which box you are filling first. Only one.
 - Write the sentence that links each rung to the next. If you cannot say why a buyer of rung two would want rung three, the ladder is a list, not a ladder.
@@ -1189,6 +1204,7 @@ His illustrative funnel math [OPINION, not verified]: a few thousand impressions
 **Why it works.** It converts the least-known thing (what results people actually get) into data before you build anything. It is also fast: no page, no platform, one payment link.
 
 **Do it.**
+
 1. Write the offer in four lines: who it is for, point A, point B, the timeframe.
 2. Outline four sessions, one theme each, with one homework task each.
 3. Choose a price you would be comfortable defending if the buyer asked what they get.
@@ -1209,6 +1225,7 @@ He also warns that at a small audience size a $19 product needs many buyers to m
 **Why it works.** A micro product is a cheap test of whether your angle sells, and it gives the first buyers a way to say yes with low risk. It can funnel into the service: the product is the first step, the service is the guided version.
 
 **Do it.**
+
 - Pick the one existing asset (an essay series, a reading list with commentary, a worksheet) that already helped readers.
 - Package it as a single file with a one-page landing page.
 - Treat it as a demand test, not a revenue plan.
@@ -1222,6 +1239,7 @@ He also warns that at a small audience size a $19 product needs many buyers to m
 **Why it works.** It gives you the language of your audience in their own words, which becomes headline and bullet material later. It turns a vague "interested" into a structured lead. And it respects the person's time.
 
 **Do it.** Build a form with these slots, in your own wording:
+
 1. What are you trying to achieve in the next 30 to 90 days?
 2. Where are you now, specifically?
 3. What is the main thing in the way (offer four to six choices plus "other")?
@@ -1312,6 +1330,7 @@ He gives name examples from his own work, such as three-part frameworks and numb
 **Why it works.** A name makes an idea portable. Readers can repeat it, and a named method is easier to distinguish from the dozens of generic courses on the same subject. For an essay writer, naming is already the core craft.
 
 **Do it.**
+
 1. Write your steps for turning a rough idea into a finished essay, as if for a new colleague.
 2. Run them on your next three essays. Cut the steps you skip.
 3. Write five names. Test each against two rules: can a stranger guess what it does, and can you say it in under five syllables?
@@ -1355,6 +1374,7 @@ He describes this as a rhythm: a launch roughly every quarter, each with new con
 **Why it works.** Readers learn where the offer lives, so the essay itself stays uninterrupted. Labelling is respectful, and a menu ordered by price lets each reader pick their own level of commitment.
 
 **Do it.**
+
 1. Create one reusable footer block: two lines for the main offer, one line for the lead magnet, one line for the free archive.
 2. Add a clearly labelled top note only in launch weeks.
 3. Keep at least three of every four letters free of any ask beyond the footer.
@@ -1454,6 +1474,7 @@ He often points to viral content as demand data: his writing course came from a 
 **Why it works.** You are using proof instead of guesses. Each source answers a different question: what do my readers value, what does the market value, and what words do buyers use.
 
 **Do it.**
+
 1. List your ten best-performing essays and notes. Find the shared idea.
 2. Open three adjacent creators and write down their five most popular titles.
 3. Scan your last 100 reader comments and emails for repeated questions.
@@ -1512,6 +1533,7 @@ His four-step build for an AI-assisted product: write the process as employee in
 **Why it works.** A finished artifact is the best proof for the buyer and the best testimonial for you.
 
 **Do it.**
+
 - One deliverable per module (for example: a hook, an outline, a draft, a revision).
 - A simple checklist or tracker the student updates.
 - A weekly check-in, even a short written one.
@@ -1544,6 +1566,7 @@ His four-step build for an AI-assisted product: write the process as employee in
 **Why it works.** A paying customer is the strongest validation. The date removes perfectionism.
 
 **Do it.**
+
 1. Write the page (Part 7), set the date, and state the delivery clearly.
 2. Cap seats at a number you can serve well.
 3. Promise only what you can build in the time left. State what is in the product on day one and what will arrive later.
@@ -1558,6 +1581,7 @@ His four-step build for an AI-assisted product: write the process as employee in
 **What Koe does.** For a first product he suggests trading free walkthroughs for feedback, since early proof is rare [DEMO/OPINION]. He says testimonials from other creators become appreciating assets as they grow [OPINION]. He also advises not to wait for testimonials: start pages and posts with your own experience as proof [OPINION]. In launches he uses screenshot proof and enrollment counts [DEMO].
 
 **Do it.**
+
 - Ask for a specific result, not praise: "What changed for you, in numbers or in a sentence?"
 - Get permission in writing to quote.
 - Never edit a testimonial into something the person did not say.
@@ -1637,6 +1661,7 @@ A product without a page and a plan is a file. Koe's approach to selling is plai
 **Why it works.** It follows how a reader decides: do I have this problem, does it matter, can I trust you, does it work for others, what exactly is offered, what do I do now.
 
 **Do it.** Draft each as one paragraph first.
+
 - **Problem:** the reader's frustration in their words (from your form).
 - **Amplify:** what it costs them to stay stuck.
 - **Story:** your own path from stuck to unstuck, briefly.
@@ -1699,6 +1724,7 @@ His advice that output quality depends on input quality is the key. In an offer-
 **Why it works.** The interview step forces you to articulate the offer. The draft step overcomes blank-page delay. The editing step restores your voice.
 
 **Do it.**
+
 1. Collect your inputs first: form answers, testimonials, the module list, price, guarantee.
 2. Use your preferred AI assistant to get a first draft.
 3. Read it aloud. Cut every sentence you would not say.
@@ -1786,6 +1812,7 @@ He also says network reposts matter and that a 1,000-follower account with a str
 **What Koe does.** He builds scarcity into the offer, not the copy: a closing date, a rising price, expiring bonuses, a cap, a seasonal sale [DEMO]. He advises using scarcity sparingly [OPINION]. He labels promotions openly in free letters, with a "skip this if you dislike self-promotion" note, and a self-sponsorship block at the top [DEMO].
 
 **Ethical rules to adopt:**
+
 - Every deadline is real. Close on time. Do not reopen the same offer at the same price immediately after saying it is over.
 - The seat cap is a number you chose for delivery reasons.
 - Bonuses are real and are delivered.
@@ -1800,6 +1827,7 @@ He also says network reposts matter and that a 1,000-follower account with a str
 **What Koe does.** After a launch, he builds the product with feedback, improves it for the next round, and raises the price [DEMO]. He also treats launches as cycles: maintenance mode between them, and focus on the launch for one to two months when it happens [DEMO]. He describes a record launch month as a "new baseline" he could not sustain, and returns to a normal routine afterward [DEMO]. He recommends reviewing what worked monthly and re-running, bundling, or turning a cohort into a standalone course using testimonials [DEMO/OPINION]. He also notes that people still do not know about a three-year-old book, so keep promoting [OPINION].
 
 **Do it.**
+
 1. Within 48 hours: send onboarding and a short thank-you.
 2. During delivery: log every question; it is next version's content.
 3. At the end: request specific testimonials and permission.
@@ -2329,33 +2357,40 @@ What the source notes did not cover, and where you will have to find answers you
 A short checklist to begin. One item per box. Tick when the deliverable exists.
 
 **Day 1**
+
 - [ ] Answer the five questions from the front matter in writing (30 minutes).
 - [ ] Create the evidence log document and write the first entry.
 - [ ] Record your baseline numbers (list size, last four essays' open rates).
 
 **Day 2**
+
 - [ ] Write the anti-vision list (15 minutes) and a minimum viable vision (30 minutes).
 - [ ] Write the point A to point B sentence for your reader.
 - [ ] Draft a one-line bio in the form "I write about X so you can Y" and compare it with your current one.
 
 **Day 3**
+
 - [ ] Create the idea museum. Save at least 15 items, two collections.
 - [ ] List 3-5 idea-dense sources and 5 writers to check instead of a feed.
 
 **Day 4**
+
 - [ ] Draw the content map on paper: territories, subtopics, ideas.
 - [ ] Choose the essay for week 3 and outline it in the pyramid form.
 
 **Day 5**
+
 - [ ] Set up the dashboard (eight metrics) and note the day of the week for your Sunday review.
 - [ ] Publish your first three short posts of the plan.
 
 **Day 6**
+
 - [ ] Send three sincere, specific notes to writers near your size.
 - [ ] Reply to ten posts with something from your own experience.
 - [ ] Take a walk with one question: what do I most want to say this month?
 
 **Day 7**
+
 - [ ] Review the log. Write the one change for next week.
 - [ ] Read Part 2 before week 2 begins.
 - [ ] Rest.
